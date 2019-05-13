@@ -42,13 +42,13 @@ end
 #  end
 ## end
 
-def hit? (num)
+def hit? num
   prompt_user
-  input = get_user_input
+  input = get_user_input  
   if input == 'h'
     num += deal_card
   elsif input == 's'
-    num
+   num
   else
     invalid_command
   end
