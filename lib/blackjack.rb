@@ -71,3 +71,4 @@ def hit? num
   else
     invalid_command
   end
+end
