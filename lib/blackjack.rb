@@ -30,17 +30,17 @@ def initial_round
   return sum
 end
 
-def hit?(current_hand)
-  prompt_user
-  input = get_user_input
-  if input == "h"
-    current_hand += deal_card
-  elsif input == "s"
-    return current_hand
-  else
-    invalid_command
-  end
-end
+## def hit?(current_hand)
+#  prompt_user
+#  input = get_user_input
+#  if input == "h"
+#    current_hand += deal_card
+#  elsif input == "s"
+  #  return current_hand
+#  else
+#    invalid_command
+#  end
+## end
 
 def invalid_command
   puts "Please enter a valid command"
@@ -59,3 +59,15 @@ def runner
   end
   end_game(hand)
 end
+
+def hit? num
+  # code hit? here
+  prompt_user
+  get_user_input
+  if get_user_input == "h"
+    num += deal_card
+  elsif get_user_input == "s"
+   num
+  else
+    invalid_command
+  end
