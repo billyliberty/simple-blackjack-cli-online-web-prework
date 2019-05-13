@@ -55,20 +55,6 @@ def hit? (num)
 end
 
 
-def hit? (num)
-
-  prompt_user
-  get_user_input
-  if get_user_input == "h"
-    num += deal_card
-  elsif get_user_input == "s"
-   return num
-  else
-    invalid_command
-  end
-end
-
-
 def invalid_command
   puts "Please enter a valid command"
 end
