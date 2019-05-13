@@ -42,8 +42,8 @@ end
 #  end
 ## end
 
-def hit? num
-  # code hit? here
+def hit? (num)
+
   prompt_user
   get_user_input
   if get_user_input == "h"
