@@ -42,6 +42,20 @@ end
 #  end
 ## end
 
+def hit? num
+  # code hit? here
+  prompt_user
+  get_user_input
+  if get_user_input == "h"
+    num += deal_card
+  elsif get_user_input == "s"
+   num
+  else
+    invalid_command
+  end
+end
+
+
 def invalid_command
   puts "Please enter a valid command"
 end
@@ -60,15 +74,3 @@ def runner
   end_game(hand)
 end
 
-def hit? num
-  # code hit? here
-  prompt_user
-  get_user_input
-  if get_user_input == "h"
-    num += deal_card
-  elsif get_user_input == "s"
-   num
-  else
-    invalid_command
-  end
-end
