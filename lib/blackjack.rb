@@ -43,6 +43,19 @@ end
 ## end
 
 def hit? (num)
+  prompt_user
+  get_user_input
+  if get_user_input == "h"
+    num += deal_card
+  elsif input == "s"
+    num
+  else
+    invalid_command
+  end
+end
+
+
+def hit? (num)
 
   prompt_user
   get_user_input
